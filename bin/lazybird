@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "lazybird"
+require "lazybird/cli/command_line"
+
+Lazybird::Cli::CommandLine.new

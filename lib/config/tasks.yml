@@ -1,0 +1,6 @@
+retweet_random:
+  desc: 'Retweets a random tweet (latest) from a random friend'
+  class: Lazybird::Tasks::RetweetRandomTask
+tweet_storm:
+  desc: 'Tweets a random quote from the Storm API http://quotes.stormconsultancy.co.uk'
+  class: Lazybird::Tasks::StormQuoteTask
