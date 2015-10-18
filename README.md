@@ -1,6 +1,6 @@
 # Lazybird (Beta)
 
-[![Gem Version](https://img.shields.io/badge/lazybird-v0.1.0beta-orange.svg)][gem]
+[![Gem Version](https://img.shields.io/badge/lazybird-v0.1.1beta-orange.svg)][gem]
 
 [gem]: https://rubygems.org/gems/lazybird
 
@@ -42,7 +42,7 @@ And run config to enter your twitter settings: `config consumer_key consumer_sec
 
 ## Usage
 
-Run it with `lazybird` - you would need to keep the app running as long as you want to tweet automatically.
+Run the CLI with `lazybird` - you would need to keep the app running as long as you want to tweet automatically.
 
 Lazybird contains (at the moment) only two tasks that run at a certain configured time:
 

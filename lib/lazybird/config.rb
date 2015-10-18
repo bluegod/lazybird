@@ -1,6 +1,7 @@
 require 'twitter'
 require 'yaml'
 require 'lazybird/db'
+require 'bundler'
 
 module Lazybird
   module Config
@@ -16,7 +17,7 @@ module Lazybird
     end
 
     def tasks
-      @_tasks ||= YAML::load_file('./lib/config/tasks.yml')
+      @_tasks ||= YAML::load_file("#{gem_path}/lib/config/tasks.yml")
     end
 
     def db_file
@@ -28,6 +29,10 @@ module Lazybird
     end
 
     private
+
+    def gem_path
+      Bundler.rubygems.find_name('lazybird').first.full_gem_path
+    end
 
     def db_config
       #TODO: nice to have - this should go to the DB if a new config is saved.

@@ -22,7 +22,7 @@ module Lazybird
         if Lazybird::Config.db_file_exists?
           @facade.load_default_tasks
         else
-          puts 'Type: '.bold + "setup \u{23ce}".red.bold + " as this is the first time running the app.\n".bold
+          puts 'Type: '.bold + "setup \u{23ce} ".red.bold + " as this is the first time running the app.\n".bold
         end
       end
 
